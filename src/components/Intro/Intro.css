@@ -1,0 +1,31 @@
+.intro {
+    width: 1144px;
+    height: 1200px;
+    background: linear-gradient(-25deg, #FF6F20, rgba(225,111,32,0.3));
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 92px;
+    border-radius: 48px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.05);
+    
+}
+.intro__description {
+    padding: 64px;
+}
+.intro__description--text {
+    width: 485px;
+    
+    
+}
+.intro__description--text h3{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.5;
+}
+.intro__description--text p{
+    line-height: 1.5;
+    
+}

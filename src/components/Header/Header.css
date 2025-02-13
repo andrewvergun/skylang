@@ -82,6 +82,12 @@ nav {
         justify-content: center;
         align-items: center;
     }
+    .header__logo a {
+        text-decoration: none;
+        
+        
+        
+    }
     .header__logo p {
         
         font-size: 20px;
@@ -108,5 +114,24 @@ nav {
     }
     .empty-div{
         display: none;
+    }
+}
+@media (max-width: 1144px) {
+    .header__container {
+        width: 100%;
+    }
+    .header__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__logo p {
+        
+    }
+    .header__links {
+        justify-content: space-evenly;
+    }
+    .header__links li {
+        margin: 0 7px;
     }
 }

@@ -1,5 +1,6 @@
 import './Header.css';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [scroll, setScroll] = useState(false);
@@ -19,15 +20,20 @@ const Header = () => {
   return (
     <header className={scroll ? 'header-scroll' : 'header'}>
       <div className="header__container">
-        <div className="header__logo">
-          <p>SkyLang</p>
-        </div>
+        
+          <div className="header__logo">
+          <Link to="/home">
+            <p>SkyLang</p>
+            </Link>
+          </div>
+        
         <nav>
           <ul className="header__links">
-            <li><a href="#">Головна</a></li>
-            <li><a href="#">Наші курси</a></li>
-            <li><a href="#">Про нас</a></li>
-            <li><a href="#">Контакти</a></li>
+            
+          <li><Link to="/home">Головна</Link></li>
+          <li><Link to="/courses">Наші курси</Link></li>
+          <li><Link to="/about">Про нас</Link></li>
+          <li><Link to="/contact">Контакт</Link></li>
           </ul>
         </nav>
         <div className="empty-div"></div>
