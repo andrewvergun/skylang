@@ -1,191 +1,195 @@
 .intro {
-    width: 1144px;
-    height: auto;
-    background: linear-gradient(-25deg, #FF6F20, rgba(225,111,32,0.3));
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 92px;
-    border-radius: 48px;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.05);
-    padding: 64px;
-    box-sizing: border-box;
+  width: 1144px;
+  height: auto;
+  background: linear-gradient(-25deg, #ff6f20, rgba(225, 111, 32, 0.3));
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 92px;
+  border-radius: 48px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.05);
+  padding: 64px;
+  box-sizing: border-box;
 }
 
 .intro__description {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .intro__description--text {
-    width: 480px;
+  width: 480px;
 }
 
 .intro__description--text h3 {
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 1.5;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
 }
 
 .intro__description--text p {
-    line-height: 1.5;
-    width: 480px;
+  line-height: 1.5;
+  width: 480px;
 }
 
 .intro__description img {
-    width: 508px;
-    height: 420px;
+  width: 508px;
+  height: 420px;
 }
 
 .intro__courses {
-    margin-top: 65px;
+  margin-top: 65px;
 }
 
 .intro__courses--title {
-    font-size: 20px;
-    margin-bottom: 24px;
+  font-size: 20px;
+  margin-bottom: 24px;
 }
 
 .intro__courses--courses {
-    display: flex;
-    gap: 32px;
-    flex-direction: row;
-    overflow-x: auto;
-    white-space: nowrap; /* Prevents content from wrapping */
-    scroll-snap-type: x mandatory; /* Enables smooth snapping */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-    scroll-behavior: smooth; /* Smooth scrolling on non-iOS */
+  display: flex;
+  gap: 32px;
+  flex-direction: row;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+
+  -webkit-overflow-scrolling: touch;
+
+  scroll-behavior: smooth;
 }
 
 .intro__courses--courses::-webkit-scrollbar {
-    display: none; /* Hides the scrollbar */
+  display: none;
 }
+
 .intro__courses--hint {
-    display: none;
-
- /* Prevents the hint text from interfering with scrolling */
+  display: none;
 }
 
-
-/* On smaller screens, allow wrapping of the courses */
 @media (max-width: 1144px) {
-    .intro {
-        width: 90%; /* Instead of full width with margin */
-        margin: 80px auto 32px auto;
-        padding: 32px;
-    }
+  .intro {
+    width: 90%;
 
-    .intro__description {
-        flex-direction: column;
-        align-items: center;
-    }
+    margin: 80px auto 32px auto;
+    padding: 32px;
+  }
 
-    .intro__description--text {
-        width: 100%;
-    }
+  .intro__description {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .intro__description--img {
-        width: 100%;
-        height: auto;
-        display: flex; /* Ensures it takes full width */
-        justify-content: center; /* Centers image if needed */
-    }
-    
-    .intro__description img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        display: block; /* Removes extra space below inline images */
-        object-fit: cover;
-    }
+  .intro__description--text {
+    width: 100%;
+  }
 
+  .intro__description--img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
 
-    .intro__courses--courses {
-        flex-wrap: nowrap; /* Prevent wrapping, ensuring scrolling */
-        justify-content: flex-start; /* Aligns courses to the left */
-    }
-    .intro__courses--hint {
-        display: none;
-    }
+  .intro__description img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  .intro__courses--courses {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .intro__courses--hint {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
-    .intro {
-        margin: 112px 3% 32px 3%;
-        border-radius: 16px;
-        width: 94%;
-        height: auto;
-        padding: 16px;
-        background-color: #fff;
-    }
+  .intro {
+    margin: 112px 3% 32px 3%;
+    border-radius: 16px;
+    width: 94%;
+    height: auto;
+    padding: 16px;
+    background-color: #fff;
+  }
 
-    .intro__description {
-        flex-direction: column;
-        align-items: center;
-        text-align: left;
-    }
+  .intro__description {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
 
-    .intro__description--text {
-        width: 100%;
-    }
+  .intro__description--text {
+    width: 100%;
+  }
 
-    .intro__description--text h3 {
-        text-align: left;
-        width: 100%;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        white-space: normal;
-    }
+  .intro__description--text h3 {
+    text-align: left;
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
 
-    .intro__description--text p {
-        width: 100%;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        white-space: normal;
-    }
+  .intro__description--text p {
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
 
-    .intro__description--img {
-        width: 100%;
-        height: auto;
-        display: flex; /* Ensures it takes full width */
-        justify-content: center; /* Centers image if needed */
-    }
-    
-    .intro__description img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        display: block; /* Removes extra space below inline images */
-        object-fit: cover;
-    }
+  .intro__description--img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
 
-    .intro__courses {
-        margin-top: 40px;
-    }
-    .intro__courses--title {
-        display: flex;
-    }
-    .intro__courses--hint {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 16px;
-        font-size: 16px;
-        color: rgba(255, 255, 255, 0.7);
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 8px 16px;
-        border-radius: 20px;
-        font-weight: 500;
-        pointer-events: none;
-    }
+  .intro__description img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
 
-    .intro__courses--courses {
-        flex-direction: row;
-        gap: 16px;
-        overflow-x: auto; /* Ensures horizontal scrolling */
-        flex-wrap: nowrap; /* Prevent wrapping */
-        justify-content: flex-start; /* Aligns the items to the left */
-    }
+  .intro__courses {
+    margin-top: 40px;
+  }
+
+  .intro__courses--title {
+    display: flex;
+  }
+
+  .intro__courses--hint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+    pointer-events: none;
+  }
+
+  .intro__courses--courses {
+    flex-direction: row;
+    gap: 16px;
+    overflow-x: auto;
+
+    flex-wrap: nowrap;
+
+    justify-content: flex-start;
+  }
 }
