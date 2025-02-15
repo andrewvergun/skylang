@@ -50,11 +50,24 @@ nav {
 .header__links li {
   list-style: none;
   margin: 0 24px;
+  box-sizing: border-box;
+  white-space: nowrap;
+   
 }
 
 .header__links li a {
   text-decoration: none;
   color: black;
+  transition: background-color 0.2s ease-in-out;
+  padding: 10px;
+  border-radius: 8px;
+}
+.header__links li a:hover {
+  background-color: #F6F6F6;
+}
+
+.header__links li a.active {
+  background-color: #FF6F2080;
 }
 
 .empty-div {
@@ -97,11 +110,19 @@ nav {
     display: flex;
     justify-content: space-evenly;
     min-height: 48px;
+    width: 100%;
   }
   .header__links li {
     margin: 0;
-    padding: 8px 0;
     align-self: center;
+  }
+  .header__links li a {
+    padding: 8px 4px;
+    margin: 0;
+    font-size: 16px;
+  }
+  .header__links li a:hover {
+    background-color: none;
   }
   .empty-div {
     display: none;
