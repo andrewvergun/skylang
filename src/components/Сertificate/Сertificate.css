@@ -104,10 +104,11 @@ h2 {
 
     .certificate__container--img img {
         width: 100%;
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
     }
 
     .certificate__container--img img:hover {
         transform: none;
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
     }
 }

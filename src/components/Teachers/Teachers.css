@@ -163,4 +163,8 @@
     .teachers__container--right p {
         max-width: 250px;
     }
+    .teacher-experience {
+        margin-top: auto;
+        margin-bottom: 16px;
+    }
 }
