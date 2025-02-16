@@ -56,11 +56,13 @@ h2 {
     font-size: clamp(16px, 2vw, 18px);
     font-weight: 450;
     margin: 0;
+    margin-bottom: 8px;
 }
 
 .grid-description p {
     line-height: 1.5;
     margin: 0;
+    margin-bottom: 8px;
     font-size: clamp(14px, 1.5vw, 16px);
 }
 
@@ -89,7 +91,7 @@ h2 {
 /* MOBILE */
 @media (max-width: 767px) {
     .teaching-style__container {
-        padding: 20px;
+        padding: 16px;
         width: 94%;
         margin-left: 3%;
         margin-right: 3%;
