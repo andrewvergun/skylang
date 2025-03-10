@@ -8,11 +8,9 @@ import AboutUs from './pages/AboutUs'
 import Contact from './pages/Contact'
 
 function App() {
-  
-
   return (
+
     <BrowserRouter>
-    
       <Header/>
       <Routes>
         <Route path="" element={<Home/>}/>

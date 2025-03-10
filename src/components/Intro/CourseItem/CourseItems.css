@@ -61,10 +61,11 @@
   color: var(--primary-color);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   cursor: pointer;
+  transition: all 0.35s ease-in-out;
 }
 .course-item__btn--learn-more:hover {
   transform: scale(1.05);
-  transition: all 0.35s ease-in-out;
+
 }
 .course-item__btn--enroll {
   margin-top: 8px;
@@ -77,9 +78,10 @@
   color: white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   cursor: pointer;
+  transition: all 0.35s ease-in-out;
 }
 .course-item__btn--enroll:hover {
   transform: scale(1.05);
 
-  transition: all 0.35s ease-in-out;
+
 }
