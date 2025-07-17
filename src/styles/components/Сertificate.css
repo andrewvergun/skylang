@@ -1,0 +1,114 @@
+h2 {
+    font-weight: 400;
+    font-size: clamp(24px, 5vw, 32px);
+    margin: 32px 0;
+    padding: 0;
+    text-align: center;
+}
+
+.certificate__container {
+    display: flex;
+    justify-content: center;
+    width: 1144px;
+    height: 648px;
+    background-color: #F6F6F6;
+    border-radius: 48px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    margin: 0 auto;
+    padding: 64px;
+    box-sizing: border-box;
+}
+
+.certificate__container--description {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 32px;
+}
+
+.certificate__container--description h3 {
+    font-size: 24px;
+    font-weight: 450;
+    margin: 0;
+    padding: 0;
+}
+
+.certificate__container--description p {
+    width: 400px;
+    margin: 0;
+}
+
+.certificate__container--img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificate__container--img img {
+    width: 540px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transform-origin: center;
+}
+
+.certificate__container--img img:hover {
+    transform: perspective(500px) rotateY(-5deg) translateY(-10px) scale(1.05);
+    box-shadow: -15px 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* Tablet styles (max-width: 1144px) */
+@media (max-width: 1144px) {
+    .certificate__container {
+        width: 90%;
+        padding: 32px;
+        height: auto;
+        border-radius: 32px;
+    }
+
+    .certificate__container--description p {
+        width: 100%;
+    }
+
+    .certificate__container--img img {
+        width: 100%;
+        max-width: 540px;
+    }
+}
+
+/* Mobile styles (max-width: 767px) */
+@media (max-width: 767px) {
+    .certificate__container {
+        width: 94%;
+        padding: 16px;
+        flex-direction: column;
+        border-radius: 16px;
+    }
+
+    .certificate__container--description {
+        order: 2;
+    }
+
+    .certificate__container--img {
+        order: 1;
+        margin-bottom: 24px;
+    }
+
+    .certificate__container--description h3 {
+        font-size: 20px;
+
+    }
+
+    .certificate__container--img img {
+        width: 100%;
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+    }
+
+    .certificate__container--img img:hover {
+        transform: none;
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+    }
+}

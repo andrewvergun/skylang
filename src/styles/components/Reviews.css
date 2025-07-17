@@ -1,0 +1,144 @@
+h2 {
+  font-size: 48px;
+  font-weight: 450;
+  padding: 0;
+  margin: 48px auto;
+}
+
+.reviews {
+  margin: 0 auto;
+  width: 1144px;
+}
+
+.social-reviews {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  padding: 38px;
+  box-sizing: border-box;
+  background-color: #f6f6f6;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.review-facebook {
+  display: flex;
+  align-items: center;
+}
+.review-facebook img {
+  width: 100px;
+  height: 100px;
+  margin-right: 32px;
+}
+
+.review-facebook p {
+  font-size: 24px;
+}
+
+.review-google {
+  display: flex;
+  align-items: center;
+}
+.review-google img {
+  width: 175px;
+  height: 100px;
+  margin-right: 32px;
+  object-fit: cover;
+}
+
+.review-google p {
+  font-size: 24px;
+}
+
+.people-reviews {
+  columns: 2;
+  column-gap: 32px;
+  margin-top: 32px;
+}
+.review {
+  margin-bottom: 32px;
+  break-inside: avoid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px;
+  background-color: #f6f6f6;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  height: auto;
+}
+.review-name {
+  margin: 0 0 16px 0;
+  font-weight: 500;
+}
+
+.review-review {
+  margin: 0;
+}
+
+/* Базові стилі залишаються такими ж */
+
+/* Планшети */
+@media (max-width: 1144px) {
+  h2 {
+    font-size: 36px;
+    margin: 36px auto;
+  }
+
+  .reviews {
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .review-facebook p,
+  .review-google p {
+    font-size: 20px;
+  }
+}
+
+/* Мобільні пристрої */
+@media (max-width: 767px) {
+  h2 {
+    font-size: clamp(24px, 5vw, 28px);
+    margin: 24px auto;
+  }
+  .reviews {
+    width: 94%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .social-reviews {
+    margin: 0;
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .people-reviews {
+    columns: 1;
+    margin-top: 24px;
+  }
+
+  .review {
+    padding: 24px;
+    margin-bottom: 24px;
+  }
+
+  .review-facebook,
+  .review-google {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .review-facebook img,
+  .review-google img {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .review-facebook p,
+  .review-google p {
+    font-size: 18px;
+  }
+}

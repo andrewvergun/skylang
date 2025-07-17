@@ -1,0 +1,121 @@
+h2 {
+    font-weight: 400;
+    font-size: clamp(24px, 5vw, 32px);
+    margin: 32px 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+.teaching-style__container {
+    width: 1144px;
+    
+    height: auto;
+    border-radius: 48px;
+    background: radial-gradient(circle, var(--primary-color) 0%, #F6F6F6 80%);
+    margin: 32px auto;
+    padding: clamp(20px, 3vw, 32px);
+    box-sizing: border-box;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teaching-style__container--grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(16px, 3vw, 32px);
+    width: 100%;
+    max-width: 1080px;
+}
+
+.teaching-style__container--grid--item {
+    box-sizing: border-box;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    border-radius: 16px;
+    border: 2px solid #F6F6F6;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
+    padding: clamp(12px, 2vw, 16px);
+}
+
+.teaching-style__container--grid--item img {
+    width: clamp(80px, 10vw, 112px);
+    height: clamp(80px, 10vw, 112px);
+    margin-right: 16px;
+    object-fit: cover;
+}
+
+.grid-description {
+    flex: 1;
+}
+
+.grid-description h3 {
+    font-size: clamp(16px, 2vw, 18px);
+    font-weight: 450;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.grid-description p {
+    line-height: 1.5;
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: clamp(14px, 1.5vw, 16px);
+}
+
+/* TABLET */
+@media (max-width: 1144px) {
+    .teaching-style__container {
+        width: 90%;
+        padding: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .teaching-style__container--grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    .teaching-style__container--grid--item {
+        height: auto;
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+    .teaching-style__container {
+        padding: 16px;
+        width: 94%;
+        margin-left: 3%;
+        margin-right: 3%;
+        border-radius: 16px;
+    }
+
+    .teaching-style__container--grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .teaching-style__container--grid--item {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .teaching-style__container--grid--item img {
+        margin-right: 0;
+        margin-bottom: 12px;
+        width: auto;
+    }
+
+    .grid-description h3 {
+        margin-top: 8px;
+    }
+}
