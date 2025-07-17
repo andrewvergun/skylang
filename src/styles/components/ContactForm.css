@@ -15,7 +15,7 @@
     background-color: #f6f6f6;
     border-radius: 48px;
     display: flex;
-    align-items: space-evenly;
+    justify-content: space-evenly;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 
 
@@ -45,11 +45,6 @@ h3 {
     align-items: center;
 }
 .contact-form__form{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    display: flex;
-    align-items: center;
     width: min-content;
     background: linear-gradient(-25deg, #ff6f20, rgba(225, 111, 32, 0.3));
     padding: 16px;
@@ -104,6 +99,8 @@ h3 {
 .contact-form__button:hover {
     scale: 1.05;
 }
+
+
 
 @media (max-width: 1144px) {
     .contact-form__container {

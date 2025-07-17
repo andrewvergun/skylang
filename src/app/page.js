@@ -5,7 +5,6 @@ import Certificate from "@/components/Сertificate/Сertificate"
 import Encouragement from "@/components/Encouragement/Encouragement"
 import Reviews from "@/components/Reviews/Reviews"
 import ContactForm from "@/components/ContactForm/ContactForm"
-import Footer from "@/components/Footer/Footer";
 
 
 const Home = () => {
