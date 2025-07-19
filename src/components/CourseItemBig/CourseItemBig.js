@@ -39,6 +39,11 @@ const CourseItemBig = ({
                             <p>Ціна: {price}</p>
                         </div>
                     </div>
+
+                    <button className="course-item-big__btn--enroll" style={{backgroundColor: `${primaryColor}`}}>
+                        Записатись
+                    </button>
+
                 </div>
 
 
