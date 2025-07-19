@@ -20,22 +20,27 @@ const CourseItemBig = ({
 
             </div>
             <div className="course-item-big__bottom">
-                <p className='description'>
-                    {description}
-                </p>
-                <div className="details">
-                    <div className="details-item">
-                        <p>Тривалість: {courseDuration}</p>
-                    </div>
-
-                    <div className="details-item">
-                        <p>Кількість занять: {numberOfLessons}</p>
-                    </div>
-
-                    <div className="details-item">
-                        <p>Ціна: {price}</p>
+                <div className="course-item-big__bottom--left">
+                    <div className='description'>
+                        {description}
                     </div>
                 </div>
+                <div className="course-item-big__bottom--right">
+                    <div className="details">
+                        <div className="details-item">
+                            <p>Тривалість: {courseDuration}</p>
+                        </div>
+
+                        <div className="details-item">
+                            <p>Кількість занять: {numberOfLessons}</p>
+                        </div>
+
+                        <div className="details-item">
+                            <p>Ціна: {price}</p>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
         </div>
