@@ -1,6 +1,6 @@
 import "@/styles/components/Intro.css";
 import CourseItems from "../CourseItem/CourseItems";
-const grayBg = "/assets/gray-bg.png";
+const image = "/assets/background-image.jpg";
 import Image from 'next/image'
 
 const Intro = () => {
@@ -29,7 +29,7 @@ const Intro = () => {
           </p>
         </div>
         <div className="intro__description--img">
-          <Image src={grayBg} width={508} height={420} alt="Background" />
+          <Image src={image} width={508} height={420} alt="Background" />
         </div>
       </div>
       <div className="intro__courses">

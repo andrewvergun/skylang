@@ -31,9 +31,9 @@ h3 {
     
 }
 .contact-link-item {
-    background-color: rgba(255, 111, 32, 0.5);
+    background-color: rgba(255, 111, 32, 0.4);
     border-radius: 16px;
-    border: 2px solid rgba(255, 111, 32, 0.4);
+    border: 2px solid rgba(255, 111, 32, 0.2);
     margin-top: 16px;
 }
 .p-title{
@@ -117,7 +117,9 @@ h3 {
 .contact-form__button:hover {
     scale: 1.05;
 }
-
+.contact-links-right {
+    display: none;
+}
 
 
 @media (max-width: 1144px) {
@@ -194,9 +196,9 @@ h3 {
         /*justify-content: center;*/
     }
     .contact-link-item {
-        background-color: rgba(255, 111, 32, 0.5);
+        background-color: rgba(255, 111, 32, 0.4);
         border-radius: 16px;
-        border: 2px solid rgba(255, 111, 32, 0.4);
+        border: 2px solid rgba(255, 111, 32, 0.2);
         margin-top: 16px;
 
         width: 100%;

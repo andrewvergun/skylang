@@ -16,7 +16,6 @@ const sourGummy = Sour_Gummy({
 const ContactForm = () => {
     return (
         <div id="contact-form-home">
-            <h2 className="contact-form__title">Залишились питання?</h2>
             <div className="contact-form__container">
                 <div className="contact-form__left">
 

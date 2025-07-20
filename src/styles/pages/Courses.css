@@ -22,7 +22,7 @@
     font-size: 24px;
     font-weight: bold;
     padding: 0;
-    margin: 8px;
+    margin: 32px 0;
 }
 .courses--hint {
     justify-content: center;
@@ -63,5 +63,7 @@
     .courses-page {
         margin-top: 48px;
     }
-
+    .courses--title p {
+        margin: 8px 0;
+    }
 }

@@ -16,6 +16,7 @@ const Home = () => {
         <Certificate/>
         <Encouragement/>
         <Reviews/>
+        <h2 className="contact-form__title">Залишились питання?</h2>
         <ContactForm/>
     </>
   )

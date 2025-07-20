@@ -35,9 +35,16 @@
 }
 
 .intro__description img {
-  width: 508px;
-  height: 420px;
+  width: 100%;
+  max-width: 508px;
+  height: 400px;
+  display: block;
+  object-fit: cover;
+  border-radius: 20px; /* subtle rounding for soft look */
 }
+
+
+
 
 .intro__courses {
   margin-top: 65px;
@@ -94,11 +101,7 @@
   }
 
   .intro__description img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
+
   }
 
   .intro__courses--courses {
@@ -159,6 +162,7 @@
     height: auto;
     display: block;
     object-fit: cover;
+    border-radius: 16px;
   }
 
   .intro__courses {
