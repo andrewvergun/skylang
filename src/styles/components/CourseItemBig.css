@@ -123,3 +123,36 @@ h2{
     }
 
 }
+
+@media (max-width: 767px) {
+    .course-item-big__container {
+        width: 94%;
+        margin: 64px 3% 32px 3%;
+        border-radius: 16px;
+
+    }
+    .course-item-big__bottom {
+        flex-direction: column;
+    }
+    .description{
+        margin: 0;
+        padding: 8px;
+    }
+    .course-item-big__top {
+        border-radius: 14px 14px 0 0;
+    }
+    .course-item-big__icon {
+        width: 48px;
+        height: 48px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .details-item {
+        width: 94%;
+    }
+    .course-item-big__btn--enroll {
+        width: 94%;
+        margin-bottom: 16px;
+    }
+}

@@ -86,13 +86,20 @@ const courseEnglishB2 = {
 const Page = () => {
     return (
         <>
+
             <Splide aria-label="Courses" options={
                 {
                     type: 'splide',
                     rewind: true,
                     width: '1380px',
                     drag: true,
+                    breakpoints: {
+                        767: {
+                            arrows: false
+                        }
+                    }
                 }}
+
                 style={{marginLeft: 'auto', marginRight: 'auto'}}
              >
                 <SplideSlide>
@@ -117,6 +124,11 @@ const Page = () => {
                     rewind: true,
                     width: '1380px',
                     drag: true,
+                    breakpoints: {
+                        767: {
+                            arrows: false
+                        }
+                    }
                 }}
                     style={{marginLeft: 'auto', marginRight: 'auto'}}
             >
