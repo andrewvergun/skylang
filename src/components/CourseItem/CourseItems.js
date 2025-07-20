@@ -16,7 +16,7 @@ const CourseItems = () => {
             link2: ""
         },
         {
-            img: "/svg/Flag_of_the_United_Kingdom_Square.svg",
+            img: "/svg/Flag_of_England.svg",
             title: "Англійська мова",
             description: "lorem ipsum dolor sit amet",
             numberOfLessons: "20",

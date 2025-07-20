@@ -40,7 +40,10 @@ const CourseItemBig = ({
                         </div>
                     </div>
 
-                    <button className="course-item-big__btn--enroll" style={{backgroundColor: `${primaryColor}`}}>
+                    <button
+                        className="course-item-big__btn--enroll"
+                        style={{backgroundColor: `${primaryColor}`
+                    }}>
                         Записатись
                     </button>
 
