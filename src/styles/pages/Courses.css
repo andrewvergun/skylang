@@ -62,5 +62,8 @@
        margin: 48px 3% 0 3%;
        width: 94%;
    }
+    .courses-page {
+        margin-top: 10px;
+    }
 
 }
