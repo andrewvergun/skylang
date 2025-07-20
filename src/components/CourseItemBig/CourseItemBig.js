@@ -16,7 +16,7 @@ const CourseItemBig = ({
         <div className='course-item-big__container' style={{border: `3px solid ${borderColor}`}}>
             <div className="course-item-big__top" style = {{backgroundColor: `${primaryColor}`}}>
                 <Image className='course-item-big__icon' src={icon} width={64} height={64} alt="Flag icon"/>
-                <h2>{title}</h2>
+                <h2 className='title'>{title}</h2>
 
             </div>
             <div className="course-item-big__bottom">

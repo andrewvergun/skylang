@@ -1,3 +1,44 @@
+.courses-page {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.courses--title {
+    font-size: 20px;
+    display: flex;
+    width: 1144px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.courses--title p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 32px 0;
+    padding: 0;
+}
+.courses--hint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+    pointer-events: none;
+    display: none;
+
+}
+
 .splide__arrow {
     width: 50px;
     height: 50px;
@@ -7,4 +48,16 @@
 .splide__arrow svg {
     width: 24px;
     height: 24px;
+}
+
+@media (max-width: 767px) {
+   .courses--hint {
+       display: flex;
+   }
+
+   .courses--title {
+       margin: 48px 3% 0 3%;
+       width: 94%;
+   }
+
 }

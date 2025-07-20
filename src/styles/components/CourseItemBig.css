@@ -6,7 +6,7 @@
     border-radius: 48px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 68px;
+    margin-top: 0;
     display: flex;
     flex-direction: column;
 }
@@ -18,7 +18,7 @@
     flex-direction: row;
     align-items: center;
 }
-h2{
+.title{
     color: white;
     font-size: 20px;
     margin: 0;
@@ -127,7 +127,7 @@ h2{
 @media (max-width: 767px) {
     .course-item-big__container {
         width: 94%;
-        margin: 64px 3% 32px 3%;
+        margin: 0px 3% 32px 3%;
         border-radius: 16px;
 
     }
@@ -144,9 +144,11 @@ h2{
     .course-item-big__icon {
         width: 48px;
         height: 48px;
+        margin: 8px;
     }
-    h2 {
+    .title {
         font-size: 18px;
+        margin: 0;
     }
     .details-item {
         width: 94%;

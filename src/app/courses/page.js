@@ -85,8 +85,13 @@ const courseEnglishB2 = {
 
 const Page = () => {
     return (
-        <>
-
+        <div className='courses-page'>
+            <div className="courses--title">
+                <p>Польська мова</p>
+                <div className="courses--hint">
+                    Свайпніть вправо, щоб побачити більше курсів
+                </div>
+            </div>
             <Splide aria-label="Courses" options={
                 {
                     type: 'splide',
@@ -118,6 +123,12 @@ const Page = () => {
 
                 </SplideSlide>
             </Splide>
+            <div className="courses--title">
+                <p>Англійська мова</p>
+                <div className="courses--hint">
+                    Свайпніть вправо, щоб побачити більше курсів
+                </div>
+            </div>
             <Splide aria-label="Courses" options={
                 {
                     type: 'splide',
@@ -150,7 +161,7 @@ const Page = () => {
             </Splide>
 
 
-        </>
+        </div>
     );
 };
 
