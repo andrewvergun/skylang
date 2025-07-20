@@ -1,0 +1,10 @@
+.social-block {
+    display: flex;
+    gap: 12px;
+}
+
+@media (max-width: 767px) {
+    .social-block {
+        margin-bottom: 24px;
+    }
+}

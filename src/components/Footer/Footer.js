@@ -1,9 +1,8 @@
 import '@/styles/components/Footer.css'
 import Image from "next/image";
 import Link from "next/link"
-const facebookLogoFooter = '/svg/facebook-footer.svg'
-const instagramLogoFooter = '/svg/instagram-footer.svg'
-const youtubeLogoFooter = '/svg/youtube-footer.svg'
+import SocialMediaLinks from "@/components/SocialMediaLinks/SocialMediaLinks";
+
 
 const Footer = () => {
     return(
@@ -11,17 +10,13 @@ const Footer = () => {
             <div className="footer__container">
                 <div className="footer__container-left">
                   <p>SkyLang</p>
-                    <div className="social-block">
-                        <Link href=""><Image src={facebookLogoFooter} width={32} height={32} alt="Facebook logo"  /> </Link>
-                        <Link href=""><Image src={instagramLogoFooter} width={32} height={32} alt="Instagram logo"  /></Link>
-                        <Link href=""><Image src={youtubeLogoFooter} width={32} height={32} alt="Youtube logo"  /></Link>
-                    </div>
+                    <SocialMediaLinks/>
                 </div>
                 <div className='footer__container-right'>
                     <p>Онлайн-школа польської мови SkyLang</p>
-                    <Link href="mailto:hello.skylang@gmail.com"><p>email: skylang@gmail.com</p></Link>
-                    <Link href=""><p>Telegram: @skylang</p></Link>
-                    <Link href="tel:+48790452677"><p>Телефон: +48790452677</p></Link>
+                    <Link href="mailto:hello.skylang@gmail.com"><p>email: hello.skylang@gmail.com</p></Link>
+                    <Link href=""><p>Telegram: @hello_skylang</p></Link>
+                    <Link href="tel:+48790452677"><p>Телефон: +48886033804</p></Link>
                 </div>
             </div>
 
