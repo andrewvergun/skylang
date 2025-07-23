@@ -2,6 +2,7 @@ import "@/styles/components/Intro.css";
 import CourseItems from "../CourseItem/CourseItems";
 const image = "/assets/background-image.jpg";
 import Image from 'next/image'
+import Services from "@/components/Services/Services";
 
 const Intro = () => {
   const introDescription = {
@@ -27,9 +28,10 @@ const Intro = () => {
               </span>
             ))}
           </p>
+          <Services/>
         </div>
-        <div className="intro__description--img">
-          <Image src={image} width={508} height={420} alt="Background" />
+        <div className="intro__description__img">
+          <Image src={image} width={508} height={420} alt="Background" className="intro__img" />
         </div>
       </div>
       <div className="intro__courses">
