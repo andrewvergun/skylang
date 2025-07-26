@@ -36,7 +36,7 @@ const Reviews = () => {
 
   return (
     <>
-      <h2>Нас вибирають!</h2>
+      <h2>Що кажуть наші учні</h2>
       <div className="reviews">
         <div className="social-reviews">
           <div className="review-facebook">

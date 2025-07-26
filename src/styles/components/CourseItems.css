@@ -52,7 +52,7 @@
 
 .course-item__btn--learn-more {
   margin-top: 8px;
-  font-size: 16px;
+  font-size: 18px;
   width: 268px;
   height: 48px;
   border: 2px solid var(--primary-color);
@@ -69,7 +69,7 @@
 }
 .course-item__btn--enroll {
   margin-top: 8px;
-  font-size: 16px;
+  font-size: 18px;
   width: 268px;
   height: 48px;
   border: none;

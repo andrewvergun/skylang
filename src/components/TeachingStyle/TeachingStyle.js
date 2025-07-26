@@ -38,7 +38,7 @@ const TeachingStyle = () => {
 
   return (
     <>
-        <h2>Який наш стиль навчання?</h2>
+        <h2>Чому обирають саме нас</h2>
         <div className="teaching-style__container">
             <div className="teaching-style__container--grid">
                 {teachingStyleItems.map((item, index) => (
