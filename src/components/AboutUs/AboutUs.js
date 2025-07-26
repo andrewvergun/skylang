@@ -16,6 +16,17 @@ const AboutUs = () => {
                     Переглянути курси
                 </button>
             </div>
+
+            <div className="quote">
+                <div className="quote-container">
+                    <div className="quote-mark">
+
+                    </div>
+                    <p className='quote-text'>
+                        Наша місія — зробити мову не бар’єром, а мостом. Ми вчимо так, як хотіли б, щоб вчили нас: легко, структуровано, без стресу.
+                    </p>
+                </div>
+            </div>
         </div>
     );
 
