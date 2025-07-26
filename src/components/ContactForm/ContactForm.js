@@ -23,7 +23,6 @@ const ContactForm = () => {
                         <h3>Напишіть нам!</h3>
                         <p className='hello-text' style={{fontFamily: sourGummy.style.fontFamily}}>Cześć!</p>
                     </div>
-                    .
                     <div className="contact-links">
                         <div className='contact-link-item'>
                             <p className='p-title'>Email:</p>
