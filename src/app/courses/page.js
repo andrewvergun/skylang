@@ -87,7 +87,7 @@ const Page = () => {
     return (
         <div className='courses-page'>
             <div className="courses--title">
-                <p>Польська мова</p>
+                <p id='polish-courses'>Польська мова</p>
                 <div className="courses--hint">
                     Свайпніть вправо, щоб побачити більше курсів
                 </div>
@@ -124,7 +124,7 @@ const Page = () => {
                 </SplideSlide>
             </Splide>
             <div className="courses--title">
-                <p>Англійська мова</p>
+                <p id='english-courses'>Англійська мова</p>
                 <div className="courses--hint">
                     Свайпніть вправо, щоб побачити більше курсів
                 </div>

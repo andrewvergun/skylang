@@ -1,5 +1,6 @@
 import '@/styles/components/CourseItemBig.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const CourseItemBig = ({
                            primaryColor,
@@ -40,13 +41,15 @@ const CourseItemBig = ({
                         </div>
                     </div>
 
-                    <button
-                        className="course-item-big__btn--enroll"
-                        style={{backgroundColor: `${primaryColor}`
-                    }}>
-                        Записатись
-                    </button>
+                    <Link href='/contact'>
+                        <button
 
+                            className="course-item-big__btn--enroll"
+                            style={{backgroundColor: `${primaryColor}`
+                        }}>
+                            Записатись
+                        </button>
+                    </Link>
                 </div>
 
 

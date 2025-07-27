@@ -2,3 +2,40 @@
     margin-top: 68px;
     min-height: 80vh;
 }
+.contact-page__description {
+    width: 1144px;
+    height: auto;
+    margin: 0 auto;
+    padding: 64px;
+    box-sizing: border-box;
+    background-color: #e6f4ea;
+    border: 1px solid #34a853;
+    border-radius: 48px;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    margin-bottom: 32px;
+
+
+}
+.contact-page-description-text{
+    text-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+@media (max-width: 1144px) {
+    .contact-page__description {
+        width: 90%;
+        padding: 32px;
+        border-radius: 32px;
+    }
+}
+@media (max-width: 767px) {
+    .contact-page__description {
+        flex-direction: column;
+        width: 94%;
+        border-radius: 16px;
+        align-items: center;
+        padding: 16px;
+    }
+}

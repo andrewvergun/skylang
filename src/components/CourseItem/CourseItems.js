@@ -12,8 +12,8 @@ const CourseItems = () => {
             numberOfLessons: "20",
             duration: "1 місяць",
             price: "400 грн",
-            link1: "",
-            link2: ""
+            link1: "/courses#polish-courses",
+            link2: "/contact"
         },
         {
             img: "/svg/Flag_of_England.svg",
@@ -22,8 +22,8 @@ const CourseItems = () => {
             numberOfLessons: "20",
             duration: "1 місяць",
             price: "400 грн",
-            link1: "",
-            link2: ""
+            link1: "/courses#english-courses",
+            link2: "/contact"
         },
 
     ]

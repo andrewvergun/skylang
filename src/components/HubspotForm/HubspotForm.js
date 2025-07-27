@@ -38,7 +38,7 @@ const HubspotForm = () => {
     return (
         <>
             <Script
-                src="//js-eu1.hsforms.net/forms/embed/v2.js"
+                src="https://js-eu1.hsforms.net/forms/embed/v2.js"
                 type="text/javascript"
                 charSet="utf-8"
                 strategy="afterInteractive"

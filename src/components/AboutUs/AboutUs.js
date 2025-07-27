@@ -14,9 +14,11 @@ const AboutUs = () => {
                 <p className='hero-subtitle'>
                     Польська та англійська з нуля до впевненого спілкування. Онлайн, з підтримкою, без нудної граматики.
                 </p>
-                <button className='hero-btn'>
-                    Переглянути курси
-                </button>
+                <Link href='/courses'>
+                    <button className='hero-btn'>
+                        Переглянути курси
+                    </button>
+                </Link>
             </div>
 
             <div className="quote">
@@ -58,9 +60,12 @@ const AboutUs = () => {
                 <p className='hero-bottom-subtitle'>
                     Готові почати або хочете дізнатись більше? Залиште повідомлення - ми відповімо найближчим часом.
                 </p>
-                <button className='hero-bottom-btn'>
+
+                <Link href='/contact'>
+                    <button className='hero-bottom-btn'>
                     Написати нам
-                </button>
+                    </button>
+                </Link>
             </div>
         </div>
     );
