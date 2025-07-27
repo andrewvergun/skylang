@@ -31,10 +31,10 @@ h3 {
     
 }
 .contact-link-item {
-    background-color: rgba(255, 111, 32, 0.4);
-    border-radius: 16px;
-    border: 2px solid rgba(255, 111, 32, 0.2);
-    margin-top: 16px;
+    /*background-color: rgba(255, 111, 32, 0.4);*/
+    /*border-radius: 16px;*/
+    /*border: 2px solid rgba(255, 111, 32, 0.2);*/
+    /*margin-top: 16px;*/
 }
 .p-title{
     margin: 4px 16px;
@@ -121,7 +121,20 @@ h3 {
     display: none;
 }
 
+.contact-link-with-copy {
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 111, 32, 0.4);
+    border-radius: 16px;
+    border: 2px solid rgba(255, 111, 32, 0.2);
+    margin-top: 16px;
+}
+.copy-button-container{
+    display: flex;
+}
 @media (max-width: 1144px) {
     .contact-form__container {
         width: 90%;
@@ -136,7 +149,7 @@ h3 {
         font-size: 32px;
     }
     .contact-links-right {
-        display: none;
+        /*display: none;*/
     }
 }
 
@@ -196,10 +209,11 @@ h3 {
         /*justify-content: center;*/
     }
     .contact-link-item {
-        background-color: rgba(255, 111, 32, 0.4);
         border-radius: 16px;
-        border: 2px solid rgba(255, 111, 32, 0.2);
-        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         width: 100%;
     }
@@ -207,12 +221,13 @@ h3 {
         margin: 4px 16px;
         font-size: 18px;
 
+
     }
     .p-definition {
         margin: 4px 16px;
     }
     .contact-links-right {
-        display: none;
+        display: flex;
         margin-bottom: 16px;
         width: 90%;
         display: flex;
