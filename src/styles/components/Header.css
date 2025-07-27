@@ -87,12 +87,14 @@ nav {
 }
 
 .header__links li a.active {
-  background-color: #FF6F2080;
+  background-color: #FF6F20;
 }
 .empty-div{
   flex: 1;
 }
-
+@media (max-width: 1144px) {
+  
+}
 @media (max-width: 767px) {
   .hamburger-button {
     display: block;

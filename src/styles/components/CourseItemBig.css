@@ -102,7 +102,7 @@
 @media (max-width: 1144px) {
     .course-item-big__container {
         width: 90%;
-        margin: 80px auto 32px auto;
+        margin: 0 auto 32px auto;
     }
     .details {
         width: 100%;
@@ -114,12 +114,18 @@
 
     }
     .course-item-big__btn--enroll {
-        width: 75%;
         margin-top: 0;
+        width: 75%;
+
     }
     .course-description h3{
         font-size: 18px;
         text-align: start;
+    }
+    .link-course-item-big__btn--enroll{
+        width: 100%;
+        margin-left: 32px;
+
     }
 
 }
@@ -127,7 +133,7 @@
 @media (max-width: 767px) {
     .course-item-big__container {
         width: 94%;
-        margin: 0px 3% 32px 3%;
+        margin: 0 3% 32px 3%;
         border-radius: 16px;
 
     }
@@ -153,8 +159,13 @@
     .details-item {
         width: 94%;
     }
-    .course-item-big__btn--enroll {
+    .link-course-item-big__btn--enroll{
         width: 94%;
+    }
+    .course-item-big__btn--enroll {
+        width: 100%;
         margin-bottom: 16px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

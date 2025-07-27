@@ -1,12 +1,12 @@
 .contact-page {
     margin-top: 68px;
-    min-height: 80vh;
+    min-height: 75vh;
 }
 .contact-page__description {
     width: 1144px;
     height: auto;
     margin: 0 auto;
-    padding: 64px;
+    padding: 48px;
     box-sizing: border-box;
     background-color: #e6f4ea;
     border: 1px solid #34a853;

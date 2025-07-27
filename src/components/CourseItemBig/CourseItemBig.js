@@ -41,7 +41,7 @@ const CourseItemBig = ({
                         </div>
                     </div>
 
-                    <Link href='/contact'>
+                    <Link className='link-course-item-big__btn--enroll' href='/contact'>
                         <button
 
                             className="course-item-big__btn--enroll"
