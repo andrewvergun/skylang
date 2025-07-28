@@ -168,10 +168,6 @@ export default function CookieBanner() {
                             <h3>Ми використовуємо кукі 🍪</h3>
                             <p>
                                 Цей сайт використовує файли cookie для покращення досвіду користувача.
-
-                                <Link style={{color: '#FF6F20', marginLeft: '8px'}} href="/privacy-policy" className="cookie-banner__link">
-                                    Детальніше
-                                </Link>
                             </p>
                         </div>
                         <div className="cookie-banner__buttons">
@@ -297,9 +293,10 @@ export default function CookieBanner() {
                             }
                         }
 
-                        @media (max-width: 768px) {
+                        @media (max-width: 767px) {
                             .cookie-banner {
                                 bottom: 16px;
+                                
                             }
 
                             .cookie-banner__content {

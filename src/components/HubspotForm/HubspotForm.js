@@ -264,6 +264,7 @@ const HubspotForm = () => {
                     .loading-spinner {
                         text-align: center;
                         color: #6c757d;
+                        padding: 16px;
                     }
                     .spinner {
                         width: 40px;
