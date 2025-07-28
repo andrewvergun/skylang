@@ -197,8 +197,8 @@ export default function CookieBanner() {
                             width: 1144px;
                             background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
                             border: 1px solid #404040;
-                            border-radius: 24px;
-                            padding: 24px 32px;
+                            border-radius: 32px;
+                            padding: 32px 32px;
                             box-shadow: 0 16px 64px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.05);
                             display: flex;
                             justify-content: space-between;
@@ -225,7 +225,7 @@ export default function CookieBanner() {
                             margin: 0;
                             line-height: 1.5;
                             color: #e0e0e0;
-                            font-size: 14px;
+                            font-size: 18px;
                         }
 
                         .cookie-banner__link {
@@ -247,11 +247,12 @@ export default function CookieBanner() {
                         }
 
                         .cookie-banner__button {
-                            font-size: 14px;
+                            font-size: 18px;
                             font-weight: 600;
                             border: none;
+                            height: 48px;
                             padding: 12px 24px;
-                            border-radius: 12px;
+                            border-radius: 16px;
                             cursor: pointer;
                             transition: all 0.3s ease;
                             position: relative;
@@ -286,10 +287,10 @@ export default function CookieBanner() {
                             transform: translateY(-1px);
                         }
 
-                        @media (max-width: 1200px) {
+                        @media (max-width: 1144px) {
                             .cookie-banner__content {
                                 width: 90%;
-                                margin: 0 16px;
+                                //margin: 0 16px;
                             }
                         }
 
@@ -301,7 +302,7 @@ export default function CookieBanner() {
 
                             .cookie-banner__content {
                                 width: 94%;
-                                padding: 20px;
+                                padding: 16px;
                                 border-radius: 16px;
                                 flex-direction: column;
                                 align-items: stretch;
@@ -319,7 +320,7 @@ export default function CookieBanner() {
 
                             .cookie-banner__text p {
                                 text-align: center;
-                                font-size: 14px;
+                                font-size: 18px;
                             }
 
                             .cookie-banner__buttons {
@@ -336,17 +337,17 @@ export default function CookieBanner() {
 
                         @media (max-width: 480px) {
                             .cookie-banner__content {
-                                width: 96%;
+                                width: 94%;
                                 padding: 16px;
                                 gap: 16px;
                             }
 
                             .cookie-banner__text h3 {
-                                font-size: 16px;
+                                font-size: 18px;
                             }
 
                             .cookie-banner__text p {
-                                font-size: 13px;
+                                font-size: 18px;
                             }
 
                             .cookie-banner__buttons {
@@ -354,7 +355,7 @@ export default function CookieBanner() {
                             }
 
                             .cookie-banner__button {
-                                padding: 14px;
+                                padding: 16px;
                                 font-size: 14px;
                             }
                         }
