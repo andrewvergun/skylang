@@ -7,7 +7,7 @@ const certificateDiploma = '/svg/certificate-diploma.svg';
 const services = [
     {
         icon: certificateDiploma,
-        title: 'Польська мова для державного сертифікату C1 та безоплатного навчання',
+        title: 'Польська мова для державних сертифікатів B1, B2, C1 та безоплатного навчання',
     },
     {
         icon: university,

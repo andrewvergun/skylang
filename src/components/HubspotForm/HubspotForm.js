@@ -176,7 +176,7 @@ const HubspotForm = () => {
                     <div className="consent-icon">🍪</div>
                     <h3>Форма недоступна</h3>
                     <p>
-                        Для використання форми зворотнього зв'язку необхідно дати згоду на використання cookies.
+                        Для використання форми зворотнього зв&#39;язку необхідно дати згоду на використання cookies.
                         Ви раніше відхилили їх використання.
                     </p>
                     <button
@@ -188,8 +188,8 @@ const HubspotForm = () => {
                 </div>
                 <style jsx>{`
                     .hubspot-form-container {
-                        min-height: 400px;
-                        margin: 32px;
+                        min-height: 500px;
+                        
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -219,7 +219,8 @@ const HubspotForm = () => {
                         margin-bottom: 24px;
                     }
                     .consent-button {
-                        background: linear-gradient(135deg, #FF6F20 0%, #ff8f3f 100%);
+                        background: #FF6F20;
+                        height: 48px;
                         color: white;
                         border: none;
                         border-radius: 12px;
@@ -228,11 +229,11 @@ const HubspotForm = () => {
                         font-weight: 600;
                         cursor: pointer;
                         transition: all 0.3s ease;
-                        box-shadow: 0 4px 16px rgba(255, 111, 32, 0.3);
+                        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
                     }
                     .consent-button:hover {
-                        transform: translateY(-2px);
-                        box-shadow: 0 8px 24px rgba(255, 111, 32, 0.4);
+                        transform: scale(1.05);
+                        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.075);
                     }
                     .consent-button:active {
                         transform: translateY(0);

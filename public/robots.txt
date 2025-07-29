@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://skylang.eu
+
+# Sitemaps
+Sitemap: https://skylang.eu/sitemap.xml

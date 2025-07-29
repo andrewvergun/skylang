@@ -1,0 +1,86 @@
+.message-us-container {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px;
+    border: 2px solid #0088CC; /* офіційний Telegram синій */
+    border-radius: 24px;
+    background-color: #ffffff;
+    color: #0088CC;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all ease-in-out 0.35s;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    animation: slideUp 0.5s ease-out;
+    z-index: 101;
+}
+
+.message-us-container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.message-us-icon {
+    width: 48px;
+    height: 48px;
+    display: block;
+
+}
+
+.message-us-icon:hover {
+    width: 48px;
+    height: 48px;
+    display: block;
+    fill: white;
+
+}
+
+.message-us-text {
+    margin: 0;
+    padding: 0;
+    margin-right: 6px;
+}
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 767px) {
+    .message-us-container {
+        width: 64px;
+        height: 64px;
+        padding: 0;
+        margin: 0;
+        border-radius: 100%;
+        justify-content: center;
+
+    }
+    .message-us-text {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+    .message-us-icon {
+        margin: 0;
+        padding: 0;
+        width: 56px;
+        height: 56px;
+
+    }
+    .message-us-container:hover {
+        transform: scale(1.05);
+    }
+}

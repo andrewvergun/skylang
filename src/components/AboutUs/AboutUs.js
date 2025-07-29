@@ -36,7 +36,7 @@ const AboutUs = () => {
                 <h2 className='about-team-title'>
                     Ми - команда SkyLang
                 </h2>
-                <Image className='about-team-img' src='' width={640} height={480} alt='Our team image'/>
+                {/*<Image className='about-team-img' src={} width={640} height={480} alt='Our team image'/>*/}
                 <p className='about-team-p'>
                     Все почалося з мого власного досвіду вивчення мов.
                     Коли я переїхав до Польщі, мені довелося швидко опанувати польську, щоб вчитися, працювати та просто жити. Я знаю, як це — боятися зробити помилку, плутати слова, соромитися говорити.

@@ -167,7 +167,7 @@ export default function CookieBanner() {
                         <div className="cookie-banner__text">
                             <h3>Ми використовуємо кукі 🍪</h3>
                             <p>
-                                Цей сайт використовує файли cookie для покращення досвіду користувача.
+                                Ми використовуємо файли cookie для покращення досвіду користувача.
                             </p>
                         </div>
                         <div className="cookie-banner__buttons">
@@ -197,7 +197,7 @@ export default function CookieBanner() {
                             width: 1144px;
                             background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
                             border: 1px solid #404040;
-                            border-radius: 32px;
+                            border-radius: 48px;
                             padding: 32px 32px;
                             box-shadow: 0 16px 64px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.05);
                             display: flex;
@@ -260,14 +260,14 @@ export default function CookieBanner() {
                         }
 
                         .cookie-banner__button--accept {
-                            background: linear-gradient(135deg, #FF6F20 0%, #ff8f3f 100%);
+                            background: #FF6F20;
                             color: white;
-                            box-shadow: 0 4px 16px rgba(255, 111, 32, 0.3);
+                            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
                         }
 
                         .cookie-banner__button--accept:hover {
-                            transform: translateY(-2px);
-                            box-shadow: 0 8px 24px rgba(255, 111, 32, 0.4);
+                            transform: scale(1.05);
+                            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.75);
                         }
 
                         .cookie-banner__button--accept:active {
@@ -284,12 +284,13 @@ export default function CookieBanner() {
                             background: #555;
                             color: white;
                             border-color: #666;
-                            transform: translateY(-1px);
+                            transform: scale(1.05);
                         }
 
                         @media (max-width: 1144px) {
                             .cookie-banner__content {
                                 width: 90%;
+                                
                                 //margin: 0 16px;
                             }
                         }

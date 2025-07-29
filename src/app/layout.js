@@ -2,10 +2,11 @@ import "@/styles/globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import CookieBanner from "@/components/CookieBanner/CookieBanner";
+import MessageUs from "@/components/MessageUs/MessageUs";
 
 export const metadata = {
-    title: "Language School",
-    description: "Мовна школа онлайн",
+    title: "SkyLang - Мовна школа",
+    description: "Мовна школа польської та англійської мови",
 };
 
 export default function RootLayout({children}) {
@@ -14,6 +15,7 @@ export default function RootLayout({children}) {
         <body>
         <Header/>
         {children}
+        <MessageUs/>
         <Footer/>
         <CookieBanner/>
         </body>
