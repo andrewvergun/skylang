@@ -6,6 +6,9 @@ const fireworks = "/assets/fireworks.png";
 import Image from 'next/image';
 import Link from 'next/link';
 import HubspotForm from "@/components/HubspotForm/HubspotForm";
+const TelegramIcon = '/svg/telegram-contact-form.svg';
+const PhoneCallIcon = '/svg/phone-call-contact-form.svg';
+const EmailIcon = '/svg/email-contact-form.svg';
 
 const sourGummy = Sour_Gummy({
     subsets: ['latin'],
@@ -27,12 +30,12 @@ const ContactForm = () => {
                     <div className="contact-links">
 
                         <div className="contact-link-with-copy">
-                            <Link href="https://mailto:hello.skylang@gmail.com">
+                            <a href="https://mailto:hello.skylang@gmail.com" target='_blank'>
                                 <div className='contact-link-item'>
                                     <p className='p-title'>Email:</p>
                                     <p className='p-definition'>hello.skylang@gmail.com</p>
                                 </div>
-                            </Link>
+                            </a>
                             <div className="copy-button-container">
                                 <CopyButton textToCopy='hello.skylang@gmail.com'/>
                             </div>
@@ -40,12 +43,12 @@ const ContactForm = () => {
                         </div>
 
                         <div className="contact-link-with-copy">
-                            <Link href="tel:+48790452677">
+                            <a href="tel:+48790452677"  target='_blank'>
                                 <div className='contact-link-item'>
                                     <p className='p-title'>Номер телефону:</p>
                                     <p className='p-definition'>+48886033804</p>
                                 </div>
-                            </Link>
+                            </a>
                             <div className="copy-button-container">
                                 <CopyButton textToCopy='+48886033804'/>
                             </div>
@@ -53,12 +56,12 @@ const ContactForm = () => {
 
 
                         <div className="contact-link-with-copy">
-                            <Link href="https://t.me/hello_skylang">
+                            <a href="https://t.me/hello_skylang" target='_blank'>
                                 <div className='contact-link-item'>
                                     <p className='p-title'>Телеграм:</p>
                                     <p className='p-definition'>@hello_skylang</p>
                                 </div>
-                            </Link>
+                            </a>
                             <div className="copy-button-container">
                                 <CopyButton textToCopy='@hello_skylang'/>
                             </div>
@@ -70,12 +73,12 @@ const ContactForm = () => {
                     <div className="contact-links-right">
 
                         <div className="contact-link-with-copy">
-                            <Link href="https://mailto:hello.skylang@gmail.com">
+                            <a href="https://mailto:hello.skylang@gmail.com" target='_blank'>
                                 <div className='contact-link-item'>
                                     <p className='p-title'>Email:</p>
                                     <p className='p-definition'>hello.skylang@gmail.com</p>
                                 </div>
-                            </Link>
+                            </a>
                             <div className="copy-button-container">
                                 <CopyButton textToCopy='hello.skylang@gmail.com'/>
                             </div>
@@ -84,12 +87,12 @@ const ContactForm = () => {
 
 
                         <div className="contact-link-with-copy">
-                            <Link href="tel:+48790452677">
+                            <a href="tel:+48790452677"  target='_blank'>
                                 <div className='contact-link-item'>
                                     <p className='p-title'>Номер телефону:</p>
                                     <p className='p-definition'>+48886033804</p>
                                 </div>
-                                </Link>
+                                </a>
                                 <div className="copy-button-container">
                                     <CopyButton textToCopy='+48886033804'/>
                                 </div>
@@ -97,12 +100,12 @@ const ContactForm = () => {
 
 
                         <div className="contact-link-with-copy">
-                            <Link href="https://t.me/hello_skylang">
+                            <a href="https://t.me/hello_skylang" target='_blank'>
                                 <div className='contact-link-item'>
                                     <p className='p-title'>Телеграм:</p>
                                     <p className='p-definition'>@hello_skylang</p>
                                 </div>
-                            </Link>
+                            </a>
                             <div className="copy-button-container">
                                 <CopyButton textToCopy='@hello_skylang'/>
                             </div>

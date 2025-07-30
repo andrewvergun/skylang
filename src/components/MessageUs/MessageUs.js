@@ -8,7 +8,7 @@ export default function MessageUs() {
         <a href="https://t.me/hello_skylang" target='_blank'>
             <div className="message-us-container">
                 <Image className='message-us-icon' src={TelegramIcon} width={48} height={48} alt ='Telegram icon'/>
-                <p className='message-us-text'>Написати у Телеграм</p>
+                <p className='message-us-text'>Написати у телеграм</p>
             </div>
         </a>
     );
