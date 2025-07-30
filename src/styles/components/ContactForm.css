@@ -25,16 +25,16 @@
 }
 h3 {
     font-size: 48px;
-
+    font-weight: normal;
     margin: 0;
     
     
 }
 .contact-link-item {
-    /*background-color: rgba(255, 111, 32, 0.4);*/
-    /*border-radius: 16px;*/
-    /*border: 2px solid rgba(255, 111, 32, 0.2);*/
-    /*margin-top: 16px;*/
+
+}
+.contact-link-with-copy a{
+    width: 100%;
 }
 .p-title{
     margin: 4px 16px;

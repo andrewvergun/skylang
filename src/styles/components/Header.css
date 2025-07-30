@@ -69,25 +69,32 @@ nav {
 
 .header__links li {
   list-style: none;
+
 }
 
 .header__links li a {
   text-decoration: none;
   color: black;
-  padding: 10px;
+  padding: 8px;
   border-radius: 8px;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   white-space: nowrap;
+  width: 100px;                 /* Fixed width for all tabs */
+  text-align: center;           /* Center text horizontally */
+  display: inline-flex;         /* Needed for flex centering */
+  align-items: center;          /* Center text vertically */
+  justify-content: center;      /* Center text horizontally */
 }
+
+
+
 
 .header__links li a:hover {
   background-color: #F6F6F6;
 }
-
 .header__links li a.active {
   background-color: rgba(255, 111, 32, 0.8);
   color: white;
-
 }
 
 .empty-div{
@@ -172,6 +179,6 @@ nav {
   }
 
   .header__links li {
-    margin: 0 7px;
+
   }
 }

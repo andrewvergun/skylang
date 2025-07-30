@@ -16,7 +16,7 @@ const Footer = () => {
                     <p>Онлайн-школа польської мови SkyLang</p>
                     <Link href="mailto:hello.skylang@gmail.com"><p>email: hello.skylang@gmail.com</p></Link>
                     <Link href="https://t.me/hello_skylang"><p>Telegram: @hello_skylang</p></Link>
-                    <Link href="tel:+48790452677"><p>Телефон: +48886033804</p></Link>
+                    <Link href="tel:+48790452677"><p>Номер телефону: +48886033804</p></Link>
                 </div>
             </div>
 
