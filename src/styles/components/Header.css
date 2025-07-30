@@ -14,8 +14,6 @@ header {
 .header__logo {
   flex: 1;
   display: flex;
-
-
 }
 .header__logo a{
   display: flex;
@@ -27,8 +25,8 @@ header {
   margin-right: 8px;
   object-fit: cover;
 }
-.header__logo p {
-  font-size: 20px;
+.header__logo-text {
+  font-size: 24px;
   margin: 0;
   padding: 0;
   color: var(--primary-color);
@@ -78,7 +76,7 @@ nav {
   color: black;
   padding: 10px;
   border-radius: 8px;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   white-space: nowrap;
 }
 
@@ -87,14 +85,19 @@ nav {
 }
 
 .header__links li a.active {
-  background-color: #FF6F20;
+  background-color: rgba(255, 111, 32, 0.8);
+  color: white;
+
 }
+
 .empty-div{
   flex: 1;
 }
+
 @media (max-width: 1144px) {
-  
+
 }
+
 @media (max-width: 767px) {
   .hamburger-button {
     display: block;

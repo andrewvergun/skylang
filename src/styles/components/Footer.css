@@ -55,12 +55,13 @@ footer {
     footer {
         height: auto;
         margin-top: 32px;
-        padding-top: 24px;
+        padding: 24px 0;
     }
 
     .footer__container {
         flex-direction: column;
         width: 94%;
+        padding: 0;
     }
     .social-block {
         margin-bottom: 24px;
