@@ -50,12 +50,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+
 }
 .details {
     margin-top: 32px;
     width: 485px;
 }
-.details-item {
+.details-items {
     box-sizing: border-box;
     width: 485px;
     height: 48px;
@@ -67,7 +69,7 @@
     padding: 0 16px;
 }
 
-.details-item p {
+.details-items p {
     font-size: 18px;
     margin: 0;
     padding: 0;
@@ -108,14 +110,15 @@
         width: 100%;
         margin-top: 16px;
     }
-    .details-item {
-        width: 75%;
+    .details-items {
+        width: 100%;
         margin-bottom: 16px;
 
     }
     .course-item-big__btn--enroll {
         margin-top: 0;
-        width: 75%;
+
+
 
     }
     .course-description h3{
@@ -124,7 +127,6 @@
     }
     .link-course-item-big__btn--enroll{
         width: 100%;
-        margin-left: 32px;
 
     }
 
@@ -156,16 +158,27 @@
         font-size: 18px;
         margin: 0;
     }
-    .details-item {
+    .details{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .details-items {
         width: 94%;
     }
     .link-course-item-big__btn--enroll{
         width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
     }
     .course-item-big__btn--enroll {
         width: 100%;
         margin-bottom: 16px;
         margin-left: auto;
         margin-right: auto;
+    }
+    .course-item-big__bottom--right{
+
     }
 }
