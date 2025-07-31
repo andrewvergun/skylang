@@ -41,11 +41,13 @@ h2 {
     padding: clamp(12px, 2vw, 16px);
 }
 
-.teaching-style__container--grid--item img {
+.teaching-style-lottie {
     width: clamp(80px, 10vw, 112px);
     height: clamp(80px, 10vw, 112px);
     margin-right: 16px;
     object-fit: cover;
+    width: 160px;
+    height: 160px;
 }
 
 .grid-description {
@@ -109,7 +111,7 @@ h2 {
         text-align: left;
     }
 
-    .teaching-style__container--grid--item img {
+    .teaching-style-lottie {
         margin-right: 0;
         margin-bottom: 12px;
         width: auto;
