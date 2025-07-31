@@ -23,7 +23,7 @@ const teachingStyleItems = [
     {
         img: '/lotties/rocket.lottie',
         title: "Авторська методика, яка дає прогрес вже з першого тижня",
-        description: "Наша структурована, ефективна та сучасна методика поєднує speaking club, гейміфікацію, психологію запам’ятовування та зворотний зв’язок. Уроки минають швидко, а результат відчувається одразу.",
+        description: "Наша структурована, ефективна та сучасна методика поєднує speaking club, гейміфікацію, психологію запам'ятовування та зворотний зв'язок. Уроки минають швидко, а результат відчувається одразу.",
     },
     {
         img: '/lotties/study.lottie',
@@ -33,7 +33,7 @@ const teachingStyleItems = [
     {
         img: '/lotties/travel.lottie',
         title: "Мова як трамплін до нового життя",
-        description: "Знання польської — це не тільки граматика. Це робота за кордоном, вступ у ВНЗ, громадянство, нове коло спілкування. А ще — це впевненість у собі. І ми допомагаємо вам зробити цей крок — м’яко, але впевнено.",
+        description: "Знання польської — це не тільки граматика. Це робота за кордоном, вступ у ВНЗ, громадянство, нове коло спілкування. А ще — це впевненість у собі. І ми допомагаємо вам зробити цей крок — м'яко, але впевнено.",
     },
 ];
 
@@ -54,17 +54,18 @@ const TeachingStyle = () => {
 
 const TeachingStyleItem = ({ item }) => {
     const containerRef = useRef(null);
-    const lottieref = useRef(null);
-    const [played, setPlayed] = useState(false);
+    const [dotLottie, setDotLottie] = useState(null);
+
+    const dotLottieRefCallback = (dotLottieInstance) => {
+        setDotLottie(dotLottieInstance);
+    };
 
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
-                if (entry.isIntersecting && !played) {
-                    if (lottieref.current) {
-                        lottieref.current.play();
-                    }
-                    setPlayed(true);
+                if (entry.isIntersecting && dotLottie) {
+                    dotLottie.stop(); // Stop the animation first
+                    dotLottie.play(); // Then play it from the beginning
                 }
             },
             { threshold: 0.5 }
@@ -79,7 +80,7 @@ const TeachingStyleItem = ({ item }) => {
                 observer.unobserve(containerRef.current);
             }
         };
-    }, [played]);
+    }, [dotLottie]);
 
     return (
         <div ref={containerRef} className="teaching-style__container--grid--item">
@@ -87,11 +88,10 @@ const TeachingStyleItem = ({ item }) => {
                 <DotLottieReact
                     className="teaching-style-lottie"
                     src={item.img}
-                    autoplay={true}
+                    autoplay={false}
                     loop={false}
-                    lottieref={lottieref}
+                    dotLottieRefCallback={dotLottieRefCallback}
                 />
-
             </div>
             <div className="grid-description">
                 <h3>{item.title}</h3>
