@@ -64,8 +64,11 @@ const TeachingStyleItem = ({ item }) => {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting && dotLottie) {
-                    dotLottie.stop(); // Stop the animation first
-                    dotLottie.play(); // Then play it from the beginning
+                    // More aggressive reset approach
+                    dotLottie.stop();
+                    setTimeout(() => {
+                        dotLottie.play();
+                    }, 50);
                 }
             },
             { threshold: 0.5 }

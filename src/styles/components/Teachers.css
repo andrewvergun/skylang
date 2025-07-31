@@ -19,7 +19,7 @@
 
 .teachers__container--left p {
     font-size: 24px;
-    font-weight: 450;
+    font-weight: 500;
     width: 100%;
     max-width: 272px;
     height: auto;
@@ -155,13 +155,12 @@
 
     .teachers__container--right img {
         width: 100%;
-        max-width: 250px;
         height: auto;
         aspect-ratio: 1/1;
         margin: 0 0 16px 0;
     }
     .teachers__container--right p {
-        max-width: 250px;
+        /*max-width: 250px;*/
     }
     .teacher-experience {
         margin-top: auto;

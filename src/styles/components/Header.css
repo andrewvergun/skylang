@@ -73,7 +73,7 @@ nav {
 
 .header__links li {
     list-style: none;
-
+    cursor: pointer;
 }
 
 .header__links li a {
@@ -94,6 +94,7 @@ nav {
 
 .header__links li a:hover {
     background-color: #F6F6F6;
+
 }
 
 .header__links li a.active {
