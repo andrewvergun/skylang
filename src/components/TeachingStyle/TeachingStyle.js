@@ -40,7 +40,7 @@ const teachingStyleItems = [
 const TeachingStyle = () => {
     return (
         <>
-            <h2>Чому обирають саме нас</h2>
+            <h2 className='why-us-title'>Чому обирають саме нас</h2>
             <div className="teaching-style__container">
                 <div className="teaching-style__container--grid">
                     {teachingStyleItems.map((item, index) => (
@@ -54,15 +54,15 @@ const TeachingStyle = () => {
 
 const TeachingStyleItem = ({ item }) => {
     const containerRef = useRef(null);
-    const lottieRef = useRef(null);
+    const lottieref = useRef(null);
     const [played, setPlayed] = useState(false);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting && !played) {
-                    if (lottieRef.current) {
-                        lottieRef.current.play();
+                    if (lottieref.current) {
+                        lottieref.current.play();
                     }
                     setPlayed(true);
                 }
@@ -89,7 +89,7 @@ const TeachingStyleItem = ({ item }) => {
                     src={item.img}
                     autoplay={true}
                     loop={false}
-                    lottieRef={lottieRef}
+                    lottieref={lottieref}
                 />
 
             </div>

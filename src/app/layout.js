@@ -3,6 +3,13 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import CookieBanner from "@/components/CookieBanner/CookieBanner";
 import MessageUs from "@/components/MessageUs/MessageUs";
+import { Rubik } from 'next/font/google';
+
+const rubik = Rubik({
+    subsets: ['latin'],
+    weight: ['400', '500','600', '700'],
+    display: 'swap',
+});
 
 export const metadata = {
     title: "SkyLang - Мовна школа",
