@@ -39,6 +39,7 @@
     .services-item__icon{
         width: 88px;
         height: 88px;
+        flex-shrink: 0;
     }
     .services-item__image{
         width: 88px;
