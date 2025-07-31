@@ -19,6 +19,8 @@ const sourGummy = Sour_Gummy({
 
 const ContactForm = () => {
     return (
+        <>
+            <h2 className="contact-form__title">Залишились питання?</h2>
         <div id="contact-form-home">
             <div className="contact-form__container">
                 <div className="contact-form__left">
@@ -118,6 +120,7 @@ const ContactForm = () => {
                 </div>
             </div>
         </div>
+        </>
 );
 };
 

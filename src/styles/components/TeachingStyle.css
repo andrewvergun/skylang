@@ -1,6 +1,6 @@
 .why-us-title {
-    font-weight: 600;
-    font-size: clamp(24px, 5vw, 32px);
+    font-weight: 400;
+    font-size: 40px;
     margin: 32px 0 0 0;
     padding: 0;
     text-align: center;
@@ -121,6 +121,9 @@ teaching-style-lottie-wrapper {
         text-align: left;
     }
 
+    .why-us-title {
+        font-size: 32px;
+    }
     .teaching-style-lottie {
         margin-right: 0;
         margin-bottom: 12px;

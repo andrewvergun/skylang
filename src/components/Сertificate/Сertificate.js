@@ -6,7 +6,7 @@ import Image from 'next/image'
 const Сertificate = () => {
   return (
     <>
-    <h2>Те, що важко отримати</h2>
+    <h2 className='certificate-title'>Те, що важко отримати</h2>
     <div className="certificate__container">
         <div className="certificate__container--description">
             <h3>Сертифікат SkyLang</h3>

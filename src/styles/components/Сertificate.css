@@ -1,6 +1,6 @@
-h2 {
+.certificate-title {
     font-weight: 400;
-    font-size: clamp(24px, 5vw, 32px);
+    font-size: 48px;
     margin: 32px 0;
     padding: 0;
     text-align: center;
@@ -88,6 +88,9 @@ h2 {
         border-radius: 16px;
     }
 
+    .certificate-title {
+        font-size: 32px;
+    }
     .certificate__container--description {
         order: 2;
     }
